@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Authors>Avaflow, Ars Magna</Authors>
+        <Authors>Avaflow, Ars Magna, Dreanor</Authors>
         <Company>Dreanor</Company>
         <Version>1.0.0.0</Version>
         <Description>Turn everyone around you into a Female</Description>
