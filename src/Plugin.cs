@@ -47,8 +47,7 @@ namespace OopsAllFemale
 
         public Configuration config { get; private set; }
 
-        private bool unsavedConfigChanges = false;
-
+        public bool UnsavedConfigChanges { get; set; }
         private PluginUI ui;
         public bool SettingsVisible = false;
 
@@ -63,7 +62,6 @@ namespace OopsAllFemale
         private bool lastWasPlayer;
         private bool lastWasModified;
 
-        // This sucks, but here we are
         static Plugin()
         {
             var list = new List<short>();
@@ -180,11 +178,11 @@ namespace OopsAllFemale
         }
         public bool SaveConfig()
         {
-            if (this.unsavedConfigChanges)
+            if (UnsavedConfigChanges)
             {
-                this.config.Save();
-                this.unsavedConfigChanges = false;
-                this.RefreshAllPlayers();
+                config.Save();
+                UnsavedConfigChanges = false;
+                RefreshAllPlayers();
                 return true;
             }
 

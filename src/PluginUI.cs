@@ -13,24 +13,26 @@ namespace OopsAllFemale
 
         public void Draw()
         {
-            if (!this.plugin.SettingsVisible)
+            if (!plugin.SettingsVisible)
             {
                 return;
             }
 
-            bool settingsVisible = this.plugin.SettingsVisible;
+            bool settingsVisible = plugin.SettingsVisible;
             if (ImGui.Begin("Oops, All Female!", ref settingsVisible, ImGuiWindowFlags.AlwaysAutoResize))
             {
-                bool shouldChangeOthers = this.plugin.config.ShouldChangeOthers;
+                bool shouldChangeOthers = plugin.config.ShouldChangeOthers;
                 ImGui.Checkbox("Change other players", ref shouldChangeOthers);
-
-                ImGui.Separator();
+                if (shouldChangeOthers)
+                {
+                    plugin.UnsavedConfigChanges = true;
+                }
 
                 ImGui.End();
             }
 
-            this.plugin.SettingsVisible = settingsVisible;
-            this.plugin.SaveConfig();
+            plugin.SettingsVisible = settingsVisible;
+            plugin.SaveConfig();
         }
     }
 }
