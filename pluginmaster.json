@@ -4,7 +4,7 @@
     "Name": "Oops, All Female!",
     "InternalName": "OopsAllFemale",
     "AssemblyVersion": "1.0.1.0",
-    "Description": "Turn everyone around you into a Female\n\nUse /poafem to open settings.",
+    "Description": "Turn everyone into a Female character\n\nUse /poafem to open settings.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/DreanorFFXIV/OopsAllFemale",
     "DalamudApiLevel": 7,
