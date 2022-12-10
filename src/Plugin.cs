@@ -153,18 +153,19 @@ namespace OopsAllFemale
 
             if (customData.Gender != 1)
             {
-                // Modify the race/tribe accordingly
+                
                 if (customData.Race == Race.HROTHGAR)
                 {
                     customData.Race = Race.MIQOTE;
+                    customData.HairStyle = (byte) (customData.HairStyle % RaceMappings.RaceHairs[Race.MIQOTE] + 1);
                 }
-
-                //female
-                customData.Gender = 1;
-                    
+               
+                // Modify the tribe accordingly
                 customData.Tribe = (byte) ((byte) customData.Race * 2 - customData.Tribe % 2);
                 
-                // TODO: Re-evaluate these for valid race-specific values? (These are Lalafell values)
+                //female
+                customData.Gender = 1;
+
                 // Constrain face type to 0-3 so we don't decapitate the character
                 customData.FaceType %= 4;
 

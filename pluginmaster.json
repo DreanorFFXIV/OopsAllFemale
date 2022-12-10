@@ -3,20 +3,20 @@
     "Author": "Dreanor",
     "Name": "Oops, All Female!",
     "InternalName": "OopsAllFemale",
-    "AssemblyVersion": "1.0.0.0",
+    "AssemblyVersion": "1.0.1.0",
     "Description": "Turn everyone around you into a Female\n\nUse /poafem to open settings.",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/DreanorFFXIV/OopsAllFemale",
     "DalamudApiLevel": 7,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/DreanorFFXIV/OopsAllFemale/master/icon.png",
-    "Punchline": "That one funny plugin your friend told you about.",
+    "Punchline": "No more pesky male characters with skimpy clothing",
     "DownloadLinkInstall": "https://github.com/DreanorFFXIV/OopsAllFemale/releases/latest/download/OopsAllFemale.zip",
     "DownloadLinkTesting": "https://github.com/DreanorFFXIV/OopsAllFemale/releases/latest/download/OopsAllFemale.zip",
     "DownloadLinkUpdate": "https://github.com/DreanorFFXIV/OopsAllFemale/releases/latest/download/OopsAllFemale.zip",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdated": "1661385299"
+    "LastUpdated": "0"
   }
 ]
 

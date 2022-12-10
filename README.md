@@ -5,4 +5,6 @@ Rejoice! No more male characters in skimpy ass clothes
 
 Add custom repo to Dalamud:
 
-https://raw.githubusercontent.com/DreanorFFXIV/OopsAllFemale/master/pluginmaster.json
+URL:
+
+`https://raw.githubusercontent.com/DreanorFFXIV/MyDalamudPlugins/master/pluginmaster.json`

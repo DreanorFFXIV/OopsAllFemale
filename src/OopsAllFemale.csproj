@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <Authors>Avaflow, Ars Magna, Dreanor</Authors>
+        <Authors>Dreanor</Authors>
         <Company>Dreanor</Company>
-        <Version>1.0.0.0</Version>
+        <Version>1.0.1.0</Version>
         <Description>Turn everyone around you into a Female</Description>
         <Copyright>(c) 2022 Dreanor</Copyright>
         <PackageProjectUrl>https://github.com/DreanorFFXIV/OopsAllFemale</PackageProjectUrl>
