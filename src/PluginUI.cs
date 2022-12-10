@@ -23,10 +23,7 @@ namespace OopsAllFemale
             {
                 bool shouldChangeOthers = plugin.config.ShouldChangeOthers;
                 ImGui.Checkbox("Change other players", ref shouldChangeOthers);
-                if (shouldChangeOthers)
-                {
-                    plugin.UnsavedConfigChanges = true;
-                }
+                plugin.ToggleChangeOthers(shouldChangeOthers);
 
                 ImGui.End();
             }

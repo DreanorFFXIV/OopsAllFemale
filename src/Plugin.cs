@@ -47,7 +47,7 @@ namespace OopsAllFemale
 
         public Configuration config { get; private set; }
 
-        public bool UnsavedConfigChanges { get; set; }
+        private bool unsavedConfigChanges;
         private PluginUI ui;
         public bool SettingsVisible = false;
 
@@ -178,10 +178,10 @@ namespace OopsAllFemale
         }
         public bool SaveConfig()
         {
-            if (UnsavedConfigChanges)
+            if (unsavedConfigChanges)
             {
                 config.Save();
-                UnsavedConfigChanges = false;
+                unsavedConfigChanges = false;
                 RefreshAllPlayers();
                 return true;
             }
@@ -189,6 +189,17 @@ namespace OopsAllFemale
             return false;
         }
 
+        public void ToggleChangeOthers(bool changeOthers)
+        {
+            if (config.ShouldChangeOthers == changeOthers)
+            {
+                return;
+            }
+
+            config.ShouldChangeOthers = changeOthers;
+            unsavedConfigChanges = true;
+        }
+        
         public async void RefreshAllPlayers()
         {
             // Workaround to prevent literally genociding the actor table if we load at the same time as Dalamud + Dalamud is loading while ingame
