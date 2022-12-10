@@ -1,0 +1,22 @@
+[
+  {
+    "Author": "Avaflow, updated by Dreanor",
+    "Name": "Oops, All Female!",
+    "InternalName": "OopsAllFemale",
+    "AssemblyVersion": "1.0.0.0",
+    "Description": "Turn everyone around you into a Female\n\nUse /poafem to open settings.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/DreanorFFXIV/OopsAllFemale",
+    "DalamudApiLevel": 7,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/DreanorFFXIV/OopsAllFemale/icon.png",
+    "Punchline": "That one funny plugin your friend told you about.",
+    "DownloadLinkInstall": "https://github.com/DreanorFFXIV/OopsAllFemale/releases/latest/download/OopsAllFemale.zip",
+    "DownloadLinkTesting": "https://github.com/DreanorFFXIV/OopsAllFemale/releases/latest/download/OopsAllFemale.zip",
+    "DownloadLinkUpdate": "https://github.com/DreanorFFXIV/OopsAllFemale/releases/latest/download/OopsAllFemale.zip",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "LastUpdated": "1661385299"
+  }
+]
+
